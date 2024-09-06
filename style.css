@@ -222,7 +222,7 @@ nav ul li a.active {
     margin-top        : 60px;
     height            : 100vh;
     z-index           : 1;
-    width             : 90%;
+    width             : 30%;
     right             : 0;
     top               : 0;
     transform         : translateX(100%);
