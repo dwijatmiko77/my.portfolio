@@ -257,8 +257,8 @@ nav ul li a.active {
 }
 
 nav ul.slide {
-  opacity          : 85%;
-  transform        : translateX(0);
+  opacity  : 85%;
+  transform: translateX(0);
 }
 
 /* SECTION */
@@ -275,7 +275,7 @@ section {
 }
 
 .home .home-content h1 {
-  margin-left: 50px;
+  margin-left: 30px;
   margin-top : 30px;
   font-size  : 6rem;
   font-weight: 700;
@@ -283,11 +283,11 @@ section {
 }
 
 .home .home-content h3 {
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .home .home-content p {
-  padding-left: 53px;
+  padding-left: 33px;
 }
 
 span {
@@ -331,7 +331,7 @@ span {
 }
 
 .social-icons {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .social-icons a {
@@ -369,7 +369,7 @@ span {
   border          : 2px solid #00eaff;
   transition      : 0.3s ease;
   cursor          : pointer;
-  margin-left     : 50px;
+  margin-left     : 30px;
 }
 
 .btn:hover {
@@ -431,12 +431,12 @@ span {
 
   61%,
   80% {
-    content: "Editor";
+    content: "Programmer";
   }
 
   81%,
   100% {
-    content: "Admin";
+    content: "Editor";
   }
 }
 
@@ -456,6 +456,11 @@ span {
 }
 
 @media(max-width:985px) {
+  section {
+    height        : 107%;
+    padding-bottom: 20px;
+  }
+
   .home {
     flex-direction: column;
     padding       : 5rem 4rem;
@@ -473,8 +478,8 @@ span {
     position    : relative;
     align-items : center;
     margin-right: 30px;
-    width       : 35vw;
-    margin-top  : 6rem;
+    width       : 30vw;
+    margin-top  : 20px;
   }
 }
 
@@ -486,7 +491,7 @@ span {
   }
 
   section {
-    height: 100%;
+    height: 150%;
   }
 }
 
