@@ -1,19 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Atma:wght@600&family=Racing+Sans+One&display=swap');
-/* font 2 */
-@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Anton&family=Black+Han+Sans&family=Edu+NSW+ACT+Foundation:wght@700&family=Lilita+One&family=Pacifico&family=Passion+One&family=Satisfy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Anton&family=Boogaloo&family=Candal&family=Carter+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oleo+Script:wght@400;700&family=Pirata+One&family=Protest+Strike&display=swap');
 
 * {
   margin        : 0;
   padding       : 0;
-  font-family   : 'acme', sans-serif;
+  font-family   : 'boogaloo', sans-serif;
   letter-spacing: 1px;
 }
 
-body {
+/* body {
   background-image: url(media/background.jpg);
   background-color: #000000;
+  } */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width              : 100%;
+  height             : 100vh;
+  overflow-x         : hidden;
+  /* background-color: black; */
+  color              : white;
+  background-image   : url(media/background.jpg);
 }
 
 /* Navnbar */
@@ -222,7 +231,7 @@ nav ul li a.active {
     margin-top        : 60px;
     height            : 100vh;
     z-index           : 1;
-    width             : 30%;
+    width             : 50%;
     right             : 0;
     top               : 0;
     transform         : translateX(100%);
@@ -254,8 +263,190 @@ nav ul.slide {
   -o-transform     : translateX(0);
 }
 
-/* HEADING */
+/* SECTION */
+section {
+  min-height      : 100vh;
+  padding         : 5rem 9% 5rem;
+  background-color: #000000b3;
+  width           : 100%;
+}
 
+.home {
+  display            : flex;
+  justify-content    : center;
+  align-items        : center;
+  gap                : 8rem;
+  /* background-color: black; */
+}
+
+.home .home-content h1 {
+  font-size  : 6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+span {
+  color: #00eaff;
+}
+
+.home-content h3 {
+  font-size    : 4rem;
+  margin-bottom: 1rem;
+  font-weight  : 700;
+}
+
+.home-content p {
+  font-size: 1.6rem;
+}
+
+.home-img {
+  border-radius: 50%;
+}
+
+.home-img img {
+  position     : relative;
+  width        : 20vmax;
+  border-radius: 50%;
+  box-shadow   : 0 0 25px solid #00eaff;
+  cursor       : pointer;
+  transition   : 0.2s linear;
+}
+
+.home-img img:hover {
+  font-size  : 1.8rem;
+  font-weight: 500;
+}
+
+.social-icons a {
+  display         : inline-flex;
+  text-decoration : none;
+  justify-content : center;
+  align-items     : center;
+  width           : 4rem;
+  height          : 4rem;
+  background-color: transparent;
+  border          : 0.2rem solid #00eaff;
+  font-size       : 2rem;
+  border-radius   : 50%;
+  margin          : 3rem 1.5rem 3rem 0;
+  transition      : 0.3s ease;
+  color           : #00eaff;
+}
+
+.social-icons a:hover {
+  color           : black;
+  transform       : scale(1.3) translateY(-5px);
+  background-color: #00eaff;
+  box-shadow      : 0 0 25px #00eaff;
+}
+
+.btn {
+  display         : inline-block;
+  padding         : 1rem 2.8rem;
+  background-color: black;
+  border-radius   : 4rem;
+  font-size       : 1.6rem;
+  color           : #00eaff;
+  letter-spacing  : 0.3rem;
+  font-weight     : 600;
+  border          : 2px solid #00eaff;
+  transition      : 0.3s ease;
+  cursor          : pointer;
+}
+
+.btn:hover {
+  transform       : scale3d(1.03);
+  background-color: #00eaff;
+  color           : black;
+  box-shadow      : 0 0 25px #00eaff;
+}
+
+.typing-text {
+  font-size  : 34px;
+  font-weight: 600;
+  min-width  : 280px;
+}
+
+.typing-text span {
+  position: relative;
+}
+
+.typing-text span::before {
+  content  : "software Developer";
+  color    : #00eaff;
+  animation: words 20s infinite;
+}
+
+.typing-text span::after {
+  content            : "";
+  /* background-color: black; */
+  position           : absolute;
+  width              : calc(100% + 8px);
+  height             : 100%;
+  border-left        : 3px solid black;
+  right              : -8;
+  animation          : cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 3px solid #fd0000;
+  }
+}
+
+@keyframes words {
+
+  0%,
+  20% {
+    content: "Web Developer";
+  }
+
+  21%,
+  40% {
+    content: "Developer";
+  }
+
+  41%,
+  60% {
+    content: "Web Designer";
+  }
+
+  61%,
+  80% {
+    content: "Youtuber";
+  }
+
+  81%,
+  100% {
+    content: "Script Writer";
+  }
+}
+
+@media (max-width: 1000px) {
+  .home {
+    gap: 4rem;
+  }
+}
+
+@media(max-width:995px) {
+  .home {
+    flex-direction: column;
+    margin        : 5rem 4rem;
+  }
+
+  .home .home-content h3 {
+    font-size: 2.5rem;
+  }
+
+  .home-content h1 {
+    font-size: 5rem;
+  }
+
+  .home-img img {
+    width     : 70vw;
+    margin-top: 4rem;
+  }
+}
 
 /* --------------------------------------------------- */
 /* FOOTER */
@@ -272,7 +463,7 @@ p.marking {
 }
 
 p.marking i {
-  font-size : 15px;
+  font-size : 20px;
   color     : #686868;
   padding   : 0;
   bottom    : 0;
@@ -281,15 +472,10 @@ p.marking i {
 }
 
 .footer {
-  position        : absolute;
   background-color: #171717;
-  height          : 120px;
+  height          : 140px;
   width           : 100%;
 }
-
-/* .social-links-me {
-  width: 100%;
-} */
 
 .social-links-me i {
 
@@ -311,7 +497,20 @@ p.marking i {
 
 .social-links-me i:hover {
   color           : #000000;
-  background-color: #9b9a9a;
+  background-color: #00eaff;
+}
+
+.footer p.contact {
+  color       : #e1e1e1;
+  font-size   : 15px;
+  padding-left: 30px;
+  margin      : 0;
+}
+
+.sosmed a i {
+  font-size  : 17px;
+  margin-left: 35px;
+  margin-top : 10px;
 }
 
 /*responsive*/
