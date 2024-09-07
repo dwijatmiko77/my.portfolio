@@ -274,20 +274,24 @@ section {
   padding: 8rem;
 }
 
-.home .home-content h1 {
-  margin-left: 30px;
-  margin-top : 30px;
-  font-size  : 6rem;
-  font-weight: 700;
-  line-height: 1.3;
+.home .home-content h1.animate__animated {
+  margin-left       : 20px;
+  margin-top        : 30px;
+  font-size         : 6rem;
+  font-weight       : 700;
+  line-height       : 1.3;
+  animation-duration: 2000ms;
+  animation-delay   : 500ms;
 }
 
 .home .home-content h3 {
-  padding-left: 30px;
+  padding-left: 25px;
 }
 
 .home .home-content p {
-  padding-left: 33px;
+  padding-left      : 23px;
+  animation-duration: 2500ms;
+  animation-delay   : 1500ms;
 }
 
 span {
@@ -301,23 +305,21 @@ span {
 }
 
 .home-content p {
-  font-size: 1.6rem;
+  font-size : 1.6rem;
+  text-align: justify;
 }
 
 @media screen and (min-width :800px) {
-  .home-content p {
-    padding-right: 50vmax;
-  }
-
   section {
     height: 100%;
   }
 }
 
 .home-img {
-  border-radius  : 50%;
-  margin-top     : 40px;
-  justify-content: center;
+  border-radius     : 50%;
+  margin-top        : 40px;
+  justify-content   : center;
+  animation-duration: 3000ms;
 }
 
 .home-img img {
@@ -331,7 +333,7 @@ span {
 }
 
 .social-icons {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .social-icons a {
@@ -357,19 +359,46 @@ span {
   box-shadow      : 0 0 25px #00eaff;
 }
 
+a i.ig {
+  animation-duration: 2000ms;
+  animation-delay   : 500ms;
+}
+
+a i.tiktok {
+  animation-duration: 2000ms;
+  animation-delay   : 1000ms;
+}
+
+a i.fb {
+  animation-duration: 2000ms;
+  animation-delay   : 1500ms;
+}
+
+a i.linkd {
+  animation-duration: 2000ms;
+  animation-delay   : 2000ms;
+}
+
+a i.git {
+  animation-duration: 2000ms;
+  animation-delay   : 2500ms;
+}
+
 .btn {
-  display         : inline-block;
-  padding         : 1rem 2.8rem;
-  background-color: black;
-  border-radius   : 4rem;
-  font-size       : 1.6rem;
-  color           : #00eaff;
-  letter-spacing  : 0.3rem;
-  font-weight     : 600;
-  border          : 2px solid #00eaff;
-  transition      : 0.3s ease;
-  cursor          : pointer;
-  margin-left     : 30px;
+  display           : inline-block;
+  padding           : 1rem 2.8rem;
+  background-color  : black;
+  border-radius     : 4rem;
+  font-size         : 1.6rem;
+  color             : #00eaff;
+  letter-spacing    : 0.3rem;
+  font-weight       : 600;
+  border            : 2px solid #00eaff;
+  transition        : 0.3s ease;
+  cursor            : pointer;
+  margin-left       : 20px;
+  animation-duration: 2000ms;
+  animation-delay   : 4000ms;
 }
 
 .btn:hover {
@@ -458,7 +487,7 @@ span {
 @media(max-width:985px) {
   section {
     height        : 107%;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
 
   .home {
