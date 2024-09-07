@@ -259,10 +259,6 @@ nav ul li a.active {
 nav ul.slide {
   opacity          : 85%;
   transform        : translateX(0);
-  -webkit-transform: translateX(0);
-  -moz-transform   : translateX(0);
-  -ms-transform    : translateX(0);
-  -o-transform     : translateX(0);
 }
 
 /* SECTION */
