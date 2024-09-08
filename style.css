@@ -494,7 +494,7 @@ a i.git {
 @media (max-width: 1000px) {
   section.home {
     padding-bottom: 90px;
-    height        : 115vh;
+    height        : 130vh;
   }
 
   .home.home-content {
@@ -504,8 +504,8 @@ a i.git {
 
 @media(max-width:985px) {
   section {
-    height        : 107%;
-    padding-bottom: 60px;
+    height        : 170%;
+    padding-bottom: 100px;
   }
 
   .home {
