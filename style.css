@@ -469,7 +469,6 @@ a i.git {
 }
 
 /* ========================================== */
-
 @media screen and (max-width :800px) {
   p.animate__animated {
     margin-left: 30px;
@@ -564,7 +563,7 @@ a i.git {
 
 /* --------------------------------------------------- */
 /* FOOTER */
-p.marking {
+/* p.marking {
   display        : flexbox;
   position       : relative;
   justify-content: end;
@@ -624,10 +623,10 @@ p.marking i {
   font-size  : 17px;
   margin-left: 35px;
   margin-top : 10px;
-}
+} */
 
 /*responsive*/
-@media(max-width: 700px) {
+/* @media(max-width: 700px) {
   .footer {
     width: 100%;
   }
@@ -638,4 +637,4 @@ p.marking i {
     height: 1px;
     width : 100%;
   }
-}
+} */
