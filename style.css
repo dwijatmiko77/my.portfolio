@@ -327,9 +327,6 @@ span {
   transition   : 0.2s linear;
 }
 
-.social-icons {
-  /* margin-left: 20px; */
-}
 
 .social-icons a {
   display         : inline-flex;
