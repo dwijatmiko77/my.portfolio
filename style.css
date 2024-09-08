@@ -17,13 +17,12 @@ html {
 }
 
 body {
-  width                : 100%;
-  height               : 100vh;
-  overflow-x           : hidden;
-  color                : white;
-  background-image     : url(media/background.jpg);
-  background-size      : 120vmax;
-  background-blend-mode: color(#000000f0);
+  width           : 100%;
+  height          : 100vh;
+  overflow-x      : hidden;
+  color           : white;
+  background-image: url(media/background.jpg);
+  background-size : 120vmax;
 }
 
 /* Navnbar */
@@ -96,9 +95,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color                : rgb(0, 202, 185);
+  color                : #00eaff;
   text-decoration      : underline;
-  text-decoration-color: rgb(0, 202, 185);
+  text-decoration-color: #00eaff;
   text-underline-offset: 10px;
   transition           : 500ms;
 }
@@ -107,7 +106,7 @@ nav ul li a.active {
   font-size            : 12px;
   text-decoration      : underline;
   text-decoration-color: #ffffff;
-  color                : rgb(0, 202, 185);
+  color                : #00eaff;
   text-underline-offset: 10px;
   letter-spacing       : 1px;
   font-weight          : 700;
@@ -155,7 +154,7 @@ nav ul li a.active {
   -o-border-radius     : 3px;
   border-style         : inset;
   border-width         : 1px;
-  border-color         : rgb(0, 238, 255);
+  border-color         : #00eaff;
 }
 
 /* Animation Menu */
@@ -314,31 +313,7 @@ span {
   text-align: justify;
 }
 
-@media screen and (min-width :800px) {
-  section {
-    height: 100%;
-  }
 
-  .home-content {
-    margin-left: 6rem;
-    width      : 25vmax;
-  }
-
-  .home-img {
-    border-radius     : 10%;
-    margin-top        : 40px;
-    animation-duration: 3000ms;
-  }
-
-  .home-img img {
-    width        : 25vh;
-    border-radius: 50%;
-    box-shadow   : 0 0 25px solid #00eaff;
-    cursor       : pointer;
-    transition   : 0.2s linear;
-  }
-
-}
 
 .home-img {
   display           : flex;
@@ -493,30 +468,69 @@ a i.git {
   }
 }
 
+/* ========================================== */
+
+@media screen and (max-width :800px) {
+  p.animate__animated {
+    margin-left: 30px;
+  }
+
+}
+@media screen and (min-width :800px) {
+  section {
+    height: 100%;
+  }
+
+  .home-content {
+    margin: 3rem;
+    width : 25vmax;
+  }
+
+  .home-img {
+    width             : 35vh;
+    border-radius     : 10%;
+    margin-top        : 40px;
+    animation-duration: 3000ms;
+  }
+
+  .home-img img {
+    width        : 30vh;
+    border-radius: 50%;
+    box-shadow   : 0 0 25px solid #00eaff;
+    cursor       : pointer;
+    transition   : 0.2s linear;
+  }
+}
+
 @media (max-width: 1000px) {
   section.home {
     padding-bottom: 90px;
-  }
-
-  .home {
-    padding-left: 4rem;
+    height        : 115vh;
   }
 
   .home.home-content {
     padding-top: 50px;
   }
-
 }
 
 @media(max-width:985px) {
   section {
     height        : 107%;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 
   .home {
+    height        : 110%;
     flex-direction: column;
     padding       : 5rem 4rem;
+  }
+
+  .home-content {
+    width: 100%;
+  }
+
+  p.animate__animated {
+    margin-left: 30px;
   }
 
   .home .home-content h3 {
@@ -528,11 +542,10 @@ a i.git {
   }
 
   .home-img img {
-    position    : relative;
-    align-items : center;
-    margin-right: 30px;
-    width       : 30vw;
-    margin-top  : 20px;
+    position   : relative;
+    align-items: center;
+    width      : 30vw;
+    margin-top : 20px;
   }
 }
 
@@ -544,7 +557,8 @@ a i.git {
   }
 
   section {
-    height: 150%;
+    height        : 150%;
+    padding-bottom: 50px;
   }
 }
 
