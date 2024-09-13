@@ -7,11 +7,6 @@
   letter-spacing: 1px;
 }
 
-/* body {
-  background-image: url(media/background.jpg);
-  background-color: #000000;
-  } */
-
 html {
   font-size: 62.5%;
 }
@@ -470,9 +465,6 @@ a i.git {
     margin-right: 30px;
   }
 
-}
-
-@media screen and (min-width :800px) {
   section {
     height: 100%;
   }
@@ -483,6 +475,8 @@ a i.git {
   }
 
   .home-img {
+    justify-content   : center;
+    align-items       : center;
     width             : 35vh;
     border-radius     : 10%;
     margin-top        : 40px;
@@ -509,6 +503,14 @@ a i.git {
     margin-left: 50px;
     width      : 120vh;
   }
+}
+
+@media(max-width:985px) {
+
+  .home-img img {
+    align-items: center;
+  }
+
 }
 
 @media(max-width:985px) {
