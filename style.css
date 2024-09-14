@@ -476,7 +476,6 @@ a i.git {
 
   .home-img {
     justify-content   : center;
-    align-items       : center;
     width             : 35vh;
     border-radius     : 10%;
     margin-top        : 40px;
@@ -484,11 +483,12 @@ a i.git {
   }
 
   .home-img img {
-    width        : 30vh;
-    border-radius: 50%;
-    box-shadow   : 0 0 25px solid #00eaff;
-    cursor       : pointer;
-    transition   : 0.2s linear;
+    justify-content: center;
+    width          : 30vh;
+    border-radius  : 50%;
+    box-shadow     : 0 0 25px solid #00eaff;
+    cursor         : pointer;
+    transition     : 0.2s linear;
   }
 }
 
